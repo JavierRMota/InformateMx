@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800');
 
 
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
 body{
 	color: #5a5a5a;
   	font-family: 'Open Sans', sans-serif;
@@ -25,6 +32,13 @@ a, a:hover, .btn{
     font-weight: 600;
     line-height: 20px;
     margin: 6px 0 0;
+}
+.hidden {
+	display:none;
+}
+
+.visible {
+	display:block;
 }
 .title-large {
     color: #141517;
