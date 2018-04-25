@@ -87,7 +87,7 @@
   </section>
      
   <!-- Info Block-03 -->
-  <section class="section-02 float-left w-100 py-5" id="userCont">
+  <section class="section-02 float-left w-100 py-5 hidden" id="userCont">
       <div class="container" >
    <h1><img class="media-object photo-profile" src="img/admin-bg.jpg" width="40" height="40" alt="..."> User</h1>
     <h2>https://fb.me/User</h2>
@@ -289,10 +289,11 @@
           var months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
           document.getElementById("Date").innerHTML=days[d.getDay()]+", "+d.getDate()+" de "+months[d.getMonth()]+" de "+d.getFullYear();
           $(document).ready(function(){
-          $('#userCont').addClass("hidden");
+        
            $('#loginFB').click(function(){
               $('#userCont').addClass("visible");
               $('#loginFB').addClass("hidden");
+               $('#userCont').removeClass("hidden");
           })});
          
       </script>
